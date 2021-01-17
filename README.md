@@ -1,3 +1,7 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/PiotrKozimor/stmprog?style=flat-square)](https://goreportcard.com/report/github.com/PiotrKozimor/stmprog)
+[![LICENSE](https://img.shields.io/github/license/PiotrKozimor/stmprog.svg?style=flat-square)](https://github.com/PiotrKozimor/stmprog/blob/master/LICENSE)
+[![Godoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/PiotrKozimor/stmprog)
+[![Releases](https://img.shields.io/github/release/PiotrKozimor/stmprog.svg?style=flat-square)](https://github.com/PiotrKozimor/stmprog/releases)
 # stmprog
 
 Stmprog is implementation of [USART protocol used in the STM32 bootloader](https://www.st.com/resource/en/application_note/cd00264342-usart-protocol-used-in-the-stm32-bootloader-stmicroelectronics.pdf) in Golang.
