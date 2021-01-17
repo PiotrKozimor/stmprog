@@ -63,6 +63,9 @@ func (p *Programmer) ProgramVerify(b []byte) error {
 	}
 	read := make([]byte, len(b))
 	n, err := p.Read(read)
+	if err != nil {
+		return err
+	}
 	if n != len(b) {
 		return fmt.Errorf("read: wanted %d, got %d bytes", len(b), n)
 	}
@@ -72,6 +75,6 @@ func (p *Programmer) ProgramVerify(b []byte) error {
 			return fmt.Errorf("programmed: %x, read: %x at offset %x", b[i], read[i], i*8)
 		}
 	}
-	log.Info("verify succeded")
+	log.Info("verify succeeded")
 	return p.Reset()
 }

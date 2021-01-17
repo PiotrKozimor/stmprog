@@ -111,7 +111,7 @@ func TestIntegrate(t *testing.T) {
 	read := make([]byte, 128)
 	handle(dut.readMemory(read, APPLICATION_ADDRESS), t)
 	if bytes.Compare(read, b[0:128]) != 0 {
-		log.Fatal("Read data nto equal to programmed")
+		log.Fatal("Read data not equal to programmed")
 	}
 	handle(dut.ExtendedEraseGlobal(), t)
 	handle(dut.WriteUnprotect(), t)
